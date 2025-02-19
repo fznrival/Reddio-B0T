@@ -64,8 +64,7 @@ Register [Reddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
 ### Cara Menggunakan
 1. Clone repository dan buka direktori:
    ```bash
-   git clone git clone https://github.com/fznrival/Reddio-B0T.git
-   cd reddio
+   git clone git clone https://github.com/fznrival/Reddio-B0T.git && cd Reddio-B0T
    ```
 
 2. Install dependencies yang dibutuhkan:
@@ -73,7 +72,7 @@ Register [Reddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
    pip install -r requirements.txt
    ```
 
-3. Konfigurasikan `data/private_keys.txt` dengan private key, satu per baris.
+3. Konfigurasikan `private_keys.txt` dengan private key, satu per baris.
 
 4. Jalankan script:
    ```bash
