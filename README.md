@@ -5,6 +5,8 @@
 
 This Python script automates tasks for Reddio, including Ethereum bridging, deploying ERC-20 contracts, and handling random token generation. It supports automated retries, gas estimation, and creative token names.
 
+Register [Reddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
+
 ### Features
 - Automates ETH bridging to Reddio.
 - Generates unique token names and deploys ERC-20 contracts.
