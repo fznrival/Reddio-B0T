@@ -293,7 +293,7 @@ if __name__ == "__main__":
 
         web3 = connect_to_web3(REDDIO_RPC_URL)
 
-        with open('data/private_keys.txt') as f:
+        with open('private_keys.txt') as f:
             private_keys = f.readlines()
 
         private_keys = [x.strip() for x in private_keys]
