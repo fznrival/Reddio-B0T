@@ -13,7 +13,7 @@ This Python script automates tasks for Reddio, including Ethereum bridging, depl
 
 ### Prerequisites
 - Python 3.x
-- Required libraries (install via `pip install -r requirements.txt`):
+- Required libraries install via `pip install -r requirements.txt`
   - `web3`
   - `solcx`
   - `colorama`
