@@ -31,7 +31,7 @@ This Python script automates tasks for Reddio, including Ethereum bridging, depl
    pip install -r requirements.txt
    ```
 
-3. Configure `data/private_keys.txt` with private keys, one per line.
+3. Configure `private_keys.txt` with private keys, one per line.
 
 4. Run the script:
    ```bash
