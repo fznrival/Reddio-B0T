@@ -18,8 +18,10 @@ def rainbow_banner():
     os.system("clear" if os.name == "posix" else "cls")
     colors = [Fore.RED, Fore.YELLOW, Fore.GREEN, Fore.CYAN, Fore.BLUE, Fore.MAGENTA]
     banner = """
-█▀▀ ▀█ █▄░█ █▀█ █ █░█ ▄▀█ █░░ 
-█▀░ █▄ █░▀█ █▀▄ █ ▀▄▀ █▀█ █▄▄ 
+
+    
+        █▀▀ ▀█ █▄░█ █▀█ █ █░█ ▄▀█ █░░ 
+        █▀░ █▄ █░▀█ █▀▄ █ ▀▄▀ █▀█ █▄▄ 
 
 
     """
@@ -283,35 +285,40 @@ def deploy_contract(account):
         print(f"{Fore.RED}Failed to deploy contract: {str(e)}")
 
 if __name__ == "__main__":
-    rainbow_banner()
+    try:
+        rainbow_banner()
 
-    deploy_choice = input(f"{Fore.CYAN}Do you want to deploy a token? (y/n): ").strip().lower()
-    deploy_contract_flag = deploy_choice == 'y'
+        deploy_choice = input(f"{Fore.CYAN}Do you want to deploy a token? (y/n): ").strip().lower()
+        deploy_contract_flag = deploy_choice == 'y'
 
-    web3 = connect_to_web3(REDDIO_RPC_URL)
+        web3 = connect_to_web3(REDDIO_RPC_URL)
 
-    with open('private_keys.txt') as f:
-        private_keys = f.readlines()
+        with open('data/private_keys.txt') as f:
+            private_keys = f.readlines()
 
-    private_keys = [x.strip() for x in private_keys]
-    
-    while True:
-        for i, private_key in enumerate(private_keys):
-            print(f"{Fore.CYAN}================================================================================\n")
-            account = get_account(web3, private_key)
-            send_amount = random_between(0.0001, 0.001)
-            wallet_link = f"https://reddio-devnet.l2scan.co/address/{account.address}"
-            print(f"{Fore.CYAN}Sending {send_amount} RED to {wallet_link}")
-            send_eth(account, send_amount)
-            bridge_amount = random_between(0.0001, 0.0009)
-            print(f"{Fore.CYAN}Bridging {bridge_amount} ETH from Sepolia to Reddio ({wallet_link})")
-            bridge_eth(account, bridge_amount)
+        private_keys = [x.strip() for x in private_keys]
+        
+        while True:
+            for i, private_key in enumerate(private_keys):
+                print(f"{Fore.CYAN}================================================================================\n")
+                account = get_account(web3, private_key)
+                send_amount = random_between(0.0001, 0.001)
+                wallet_link = f"https://reddio-devnet.l2scan.co/address/{account.address}"
+                print(f"{Fore.CYAN}Sending {send_amount} RED to {wallet_link}")
+                send_eth(account, send_amount)
+                bridge_amount = random_between(0.0001, 0.0009)
+                print(f"{Fore.CYAN}Bridging {bridge_amount} ETH from Sepolia to Reddio ({wallet_link})")
+                bridge_eth(account, bridge_amount)
 
-            if deploy_contract_flag:
-                print(f"{Fore.CYAN}Deploying contract for {wallet_link}")
-                deploy_contract(account)
+                if deploy_contract_flag:
+                    print(f"{Fore.CYAN}Deploying contract for {wallet_link}")
+                    deploy_contract(account)
 
-            print(f"{Fore.CYAN}================================================================================\n")
+                print(f"{Fore.CYAN}================================================================================\n")
 
-        delay_seconds = random_between(86400, 86777)
-        countdown_timer(int(delay_seconds))
+            delay_seconds = random_between(86400, 86777)
+            countdown_timer(int(delay_seconds))
+
+    except KeyboardInterrupt:
+        print(f"\n{Fore.RED}Process interrupted by user. Exiting safely...{Style.RESET_ALL}")
+        sys.exit(0)
