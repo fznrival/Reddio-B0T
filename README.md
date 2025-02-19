@@ -46,6 +46,8 @@ Register [Reddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
 
 Script Python ini mengotomatisasi tugas-tugas untuk Reddio, termasuk bridging Ethereum, deploy kontrak ERC-20, dan pembuatan token acak. Script ini mendukung mekanisme retry otomatis, estimasi gas, dan nama token kreatif.
 
+Register [Reddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
+
 ### Fitur
 - Mengotomatisasi bridging ETH ke Reddio.
 - Menghasilkan nama token unik dan mendistribusikan kontrak ERC-20.
