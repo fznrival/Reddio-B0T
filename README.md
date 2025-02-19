@@ -24,8 +24,7 @@ Register [Reddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
 ### How to Use
 1. Clone the repository and navigate to the directory:
    ```bash
-   git clone https://github.com/fznrival/Reddio-B0T.git
-   cd reddio
+   git clone https://github.com/fznrival/Reddio-B0T.git && cd Reddio-B0T
    ```
 
 2. Install the required dependencies:
