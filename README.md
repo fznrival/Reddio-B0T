@@ -52,7 +52,7 @@ Script Python ini mengotomatisasi tugas-tugas untuk Reddio, termasuk bridging Et
 
 ### Prasyarat
 - Python 3.x
-- Library yang dibutuhkan (install dengan `pip install -r requirements.txt`):
+- Library yang dibutuhkan install dengan `pip install -r requirements.txt`
   - `web3`
   - `solcx`
   - `colorama`
