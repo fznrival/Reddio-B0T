@@ -1,11 +1,11 @@
 
-# Reddio Automation Script
+# R3ddio Automation Script
 
 ## English
 
-This Python script automates tasks for Reddio, including Ethereum bridging, deploying ERC-20 contracts, and handling random token generation. It supports automated retries, gas estimation, and creative token names.
+This Python script automates tasks for R3ddio, including Ethereum bridging, deploying ERC-20 contracts, and handling random token generation. It supports automated retries, gas estimation, and creative token names.
 
-Register [Reddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
+Register [R3ddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
 
 ### Features
 - Automates ETH bridging to Reddio.
@@ -24,7 +24,7 @@ Register [Reddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
 ### How to Use
 1. Clone the repository and navigate to the directory:
    ```bash
-   git clone https://github.com/fznrival/Reddio-B0T.git && cd Reddio-B0T
+   git clone https://github.com/fznrival/R3ddio-B0T.git && cd R3ddio-B0T
    ```
 
 2. Install the required dependencies:
@@ -45,10 +45,10 @@ Register [Reddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
 
 Script Python ini mengotomatisasi tugas-tugas untuk Reddio, termasuk bridging Ethereum, deploy kontrak ERC-20, dan pembuatan token acak. Script ini mendukung mekanisme retry otomatis, estimasi gas, dan nama token kreatif.
 
-Register [Reddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
+Register [R3ddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
 
 ### Fitur
-- Mengotomatisasi bridging ETH ke Reddio.
+- Mengotomatisasi bridging ETH ke R3ddio.
 - Menghasilkan nama token unik dan mendistribusikan kontrak ERC-20.
 - Operasi acak untuk keamanan tambahan.
 - Mekanisme retry yang dapat dikustomisasi untuk transaksi yang andal.
@@ -64,7 +64,7 @@ Register [Reddio Testnet](https://points.reddio.com/?invite_code=1EFU7)
 ### Cara Menggunakan
 1. Clone repository dan buka direktori:
    ```bash
-   git clone git clone https://github.com/fznrival/Reddio-B0T.git && cd Reddio-B0T
+   git clone git clone https://github.com/fznrival/R3ddio-B0T.git && cd R3ddio-B0T
    ```
 
 2. Install dependencies yang dibutuhkan:
